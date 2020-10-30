@@ -1,0 +1,12 @@
+{
+  "name": "deezer-companion-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Drakx116",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.7.0"
+  }
+}
