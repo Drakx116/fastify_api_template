@@ -1,11 +1,9 @@
+import routes from './routes/alive';
+
 const fastify = require('fastify')({ 'logger': false });
 
-// First route
-fastify.get('/', async (req, res) => {
-  return {
-    'message': 'API is alive.'
-  };
-});
+// Register fastify router
+fastify.register(routes.alive, { 'prefix': '/alive' });
 
 const start = async () => {
   try {
