@@ -1,9 +1,9 @@
-import routes from './routes/alive';
+import utils from "./utils";
 
 const fastify = require('fastify')({ 'logger': false });
 
 // Register fastify router
-fastify.register(routes.alive, { 'prefix': '/alive' });
+utils.route(fastify);
 
 const start = async () => {
   try {
